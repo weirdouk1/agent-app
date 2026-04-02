@@ -31,4 +31,3 @@ jobs:
           app-name: rg-agent
           slot-name: Production
           package: .
-          enable-oryx-build: true
