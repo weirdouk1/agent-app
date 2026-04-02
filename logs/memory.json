@@ -1,0 +1,82 @@
+[
+  {
+    "query": "show all employees",
+    "response": "No employee records are present in the database or system. Both SQL and vector data return empty, indicating missing information. To resolve this, check database population, query accuracy, access permissions, and system configuration."
+  },
+  {
+    "query": "show all employees",
+    "response": "There are no employee records in the provided SQL or vector data. To retrieve employee information, ensure the data exists in the database or vectors and verify the query is accessing the correct source. Assistance with debugging or setup is available if needed."
+  },
+  {
+    "query": "show all employees",
+    "response": "The company has four employees:  \n- **Ravi** (Engineering, $80,000 salary)  \n- **Anita** (HR, $50,000 salary)  \n- **Kiran** (Engineering, $90,000 salary)  \n- **Meena** (Sales, $60,000 salary).  \n\nLet me know if you'd like further information!"
+  },
+  {
+    "query": "show all employees",
+    "response": "The company has four employees across three departments: Engineering, HR, and Sales. Ravi and Kiran work in Engineering, earning $80,000 and $90,000, respectively. Anita is in HR with a salary of $50,000, while Meena represents Sales with a $60,000 salary. Let me know if you need detailed information on any employee or department!"
+  },
+  {
+    "query": "who has highest salary",
+    "response": "Kiran, an employee in the Engineering department, has the highest salary of $90,000. Let me know if you need more information!"
+  },
+  {
+    "query": "show all employees",
+    "response": "The company has four employees across three departments:  \n\n- **Engineering**: Ravi ($80,000) and Kiran ($90,000).  \n- **HR**: Anita ($50,000).  \n- **Sales**: Meena ($60,000).  \n\nLet me know if you'd like more details!"
+  },
+  {
+    "query": "what about HR?",
+    "response": "The HR department has one employee, Anita, with a salary of $50,000. Let me know if you'd like more details!"
+  },
+  {
+    "query": "show all employees",
+    "response": "The company has four employees across three departments:\n\n- **Engineering**: Ravi (Salary: $80,000) and Kiran (Salary: $90,000).  \n- **HR**: Anita (Salary: $50,000).  \n- **Sales**: Meena (Salary: $60,000).  \n\nLet me know if you'd like additional details!"
+  },
+  {
+    "query": "list all users",
+    "response": "Here is the list of all users based on the provided SQL data:\n\n1. **Ravi** - City: Hyderabad  \n2. **Anita** - City: Mumbai  \n3. **Kiran** - City: Bangalore  \n"
+  },
+  {
+    "query": "what is laptop",
+    "response": "A laptop is a compact, portable computer with an integrated screen, keyboard, touchpad, and battery, designed for mobility and convenience. It is versatile for tasks like browsing, gaming, programming, and remote work, making it ideal for use in various locations."
+  },
+  {
+    "query": "what did Ravi buy",
+    "response": "Based on the provided SQL data, Ravi bought a **Laptop** and a **Phone**."
+  },
+  {
+    "query": "list all customers",
+    "response": "The database contains a **Customer** table, and you can list all customers using the SQL query:\n\n```sql\nSELECT * FROM Customer;\n```\n\nAdditional details or data can help refine the query or provide more specific results."
+  },
+  {
+    "query": "list all customers",
+    "response": "It seems the database result provided is not a list of customers but rather a list of database entities or tables. Unfortunately, there is no information provided specifically about customers. Could you clarify or check the query again?"
+  },
+  {
+    "query": "list all customers",
+    "response": "The list includes 59 customers from various countries, highlighting their names, contact details, addresses, and company affiliations where applicable. Here is a summary of key information:\n\n- **Geographic Diversity**: Customers are located across the globe, including Brazil, Germany, Canada, Norway, Czech Republic, Austria, Belgium, Denmark, and others.  \n- **Business Affiliations**: Some customers are linked to notable companies such as Embraer (Brazil), JetBrains s.r.o. (Czech Republic), and Woodstock Discos (Brazil).  \n- **Contact Information**: Each customer record includes a phone number, email address, and a detailed address for efficient communication.  \n- **Languages and Variability**: Names, emails, and addresses reflect cultural and language diversity.\n\nIf you need details on every customer, a subset, or specific criteria (e.g., country or company-affiliated individuals), let me know for precise filtering."
+  },
+  {
+    "query": "which country has highest revenue",
+    "response": "The country with the highest revenue is the USA, with a total revenue of $523.06."
+  },
+  {
+    "query": "what did customer 1 buy",
+    "response": "Customer 1 purchased a total of **48 songs** across various albums and artists, spanning genres like rock, classical, Brazilian music, and more. Key details:\n\n- **Rock classics**: Tracks from Guns N' Roses, Kiss, Led Zeppelin, Ozzy Osbourne, and Frank Zappa.  \n- **Brazilian music**: Songs by Chico Science & Na\u00e7\u00e3o Zumbi, Cidade Negra, Marcos Valle, Cl\u00e1udio Zoli, and Os Paralamas Do Sucesso.  \n- **Classical pieces**: Selections from Berliner Philharmoniker and Academy of St. Martin in the Fields.  \n- **Miscellaneous collections**: Songs from \"Ax\u00e9 Bahia 2001,\" \"Carnaval 2001,\" and more.  \n\nSongs ranged from **$0.99** to **$1.99**, reflecting diverse tastes and a preference for iconic and culturally rich selections."
+  },
+  {
+    "query": "list all customers",
+    "response": "Here is the cleaned and formatted version of your text:\n\n---\n\nHere is the data displayed in a clear tabular format:\n\n| CustomerId | FirstName      | LastName        | Company                                  | Address                                | City             | State | Country           | PostalCode   | Phone              | Fax               | Email                           | SupportRepId |\n|------------|----------------|-----------------|------------------------------------------|----------------------------------------|------------------|-------|-------------------|--------------|--------------------|-------------------|---------------------------------|--------------|\n| 1          | Lu\u00eds           | Gon\u00e7alves       | Embraer - Empresa Brasileira de Aeron\u00e1utica S.A. | Av. Brigadeiro Faria Lima, 2170       | S\u00e3o Jos\u00e9 dos Campos | SP    | Brazil            | 12227-000    | +55 (12) 3923-5555 | +55 (12) 3923-5566 | luisg@embraer.com.br            | 3            |\n| 2          | Leonie         | K\u00f6hler          | None                                     | Theodor-Heuss-Stra\u00dfe 34                | Stuttgart         | None  | Germany           | 70174        | +49 0711 2842222   | None              | leonekohler@surfeu.de           | 5            |\n| 3          | Fran\u00e7ois       | Tremblay        | None                                     | 1498 rue B\u00e9langer                      | Montr\u00e9al          | QC    | Canada            | H2G 1A7      | +1 (514) 721-4711  | None              | ftremblay@gmail.com             | 3            |\n| 4          | Bj\u00f8rn          | Hansen          | None                                     | Ullev\u00e5lsveien 14                       | Oslo              | None  | Norway            | 0171         | +47 22 44 22 22    | None              | bjorn.hansen@yahoo.no           | 4            |\n| 5          | Franti\u0161ek      | Wichterlov\u00e1     | JetBrains s.r.o.                        | Klanova 9/506                          | Prague            | None  | Czech Republic    | 14700        | +420 2 4172 5555   | +420 2 4172 5555  | frantisekw@jetbrains.com        | 4            |\n| 6          | Helena         | Hol\u00fd            | None                                     | Rilsk\u00e1 3174/6                          | Prague            | None  | Czech Republic    | 14300        | +420 2 4177 0449   | None              | hholy@gmail.com                 | 5            |\n| 7          | Astrid         | Gruber          | None                                     | Rotenturmstra\u00dfe 4, 1010 Innere Stadt   | Vienna            | None  | Austria           | 1010         | +43 01 5134505     | None              | astrid.gruber@apple.at          | 5            |\n| 8          | Daan           | Peeters         | None                                     | Gr\u00e9trystraat 63                        | Brussels          | None  | Belgium           | 1000         | +32 02 219 03 03   | None              | daan_peeters@apple.be           | 4            |\n| 9          | Kara           | Nielsen         | None                                     | S\u00f8nder Boulevard 51                    | Copenhagen        | None  | Denmark           | 1720         | +45 3331 9991      | None              | kara.nielsen@jubii.dk           | 4            |\n| 10         | Eduardo        | Martins         | Woodstock Discos                        | Rua Dr. Falc\u00e3o Filho, 155              | S\u00e3o Paulo         | SP    | Brazil            | 01007-010    | +55 (11) 3033-5446 | +55 (11) 3033-4564 | eduardo@woodstock.com.br        | 4            |\n| 11         | Alexandre      | Rocha           | Banco do Brasil S.A.                    | Av. Paulista, 2022                     | S\u00e3o Paulo         | SP    | Brazil            | 01310-200    | +55 (11) 3055-3278 | +55 (11) 3055-8131 | alero@uol.com.br                | 5            |\n| 12         | Roberto        | Almeida         | Riotur                                   | Pra\u00e7a Pio X, 119                       | Rio de Janeiro    | RJ    | Brazil            | 20040-020    | +55 (21) 2271-7000 | +55 (21) 2271-7070 | roberto.almeida@riotur.gov.br   | 3            |\n| 13         | Fernanda       | Ramos           | None                                     | Qe 7 Bloco G                           | Bras\u00edlia          | DF    | Brazil            | 71020-677    | +55 (61) 3363-5547 | +55 (61) 3363-7855 | fernadaramos4@uol.com.br        | 4            |\n| 14         | Mark           | Philips         | Telus                                   | 8210 111 ST NW                         | Edmonton          | AB    | Canada            | T6G 2C7      | +1 (780) 434-4554  | +1 (780) 434-5565 | mphilips12@shaw.ca              | 5            |\n| 15         | Jennifer       | Peterson        | Rogers Canada                           | 700 W Pender Street                    | Vancouver         | BC    | Canada            | V6C 1G8      | +1 (604) 688-2255  | +1 (604) 688-8756 | jenniferp@rogers.ca             | 3            |\n| 16         | Frank          | Harris          | Google Inc.                             | 1600 Amphitheatre Parkway              | Mountain View     | CA    | USA               | 94043-1351   | +1 (650) 253-0000  | +1 (650) 253-0000 | fharris@google.com              | 4            |\n| 17         | Jack           | Smith           | Microsoft Corporation                   | 1 Microsoft Way                        | Redmond           | WA    | USA               | 98052-8300   | +1 (425) 882-8080  | +1 (425) 882-8081 | jacksmith@microsoft.com         | 5            |\n| 18         | Michelle       | Brooks          | None                                     | 627 Broadway                           | New York          | NY    | USA               | 10012-2612   | +1 (212) 221-3546  | +1 (212) 221-4679 | michelleb@aol.com               | 3            |\n| 19         | Tim            | Goyer           | Apple Inc.                              | 1 Infinite Loop                        | Cupertino         | CA    | USA               | 95014        | +1 (408) 996-1010  | +1 (408) 996-1011 | tgoyer@apple.com                | 3            |\n| 20         | Dan            | Miller          | None                                     | 541 Del Medio Avenue                   | Mountain View     | CA    | USA               | 94040-111    | +1 (650) 644-3358  | None              | dmiller@comcast.com             | 4            |\n\n---\n\n(Note: The table has been formatted with appropriate spacing and alignment to improve readability.)"
+  },
+  {
+    "query": "list all customers",
+    "response": "Here is the cleaned and properly formatted text:\n\n---\n\n### List of All Customers:\n\n1. **CustomerId:** 1  \n   **Name:** Lu\u00eds Gon\u00e7alves  \n   **Country:** Brazil  \n\n2. **CustomerId:** 2  \n   **Name:** Leonie K\u00f6hler  \n   **Country:** Germany  \n\n3. **CustomerId:** 3  \n   **Name:** Fran\u00e7ois Tremblay  \n   **Country:** Canada  \n\n4. **CustomerId:** 4  \n   **Name:** Bj\u00f8rn Hansen  \n   **Country:** Norway  \n\n5. **CustomerId:** 5  \n   **Name:** Franti\u0161ek Wichterlov\u00e1  \n   **Country:** Czech Republic  \n\n6. **CustomerId:** 6  \n   **Name:** Helena Hol\u00fd  \n   **Country:** Czech Republic  \n\n7. **CustomerId:** 7  \n   **Name:** Astrid Gruber  \n   **Country:** Austria  \n\n8. **CustomerId:** 8  \n   **Name:** Daan Peeters  \n   **Country:** Belgium  \n\n9. **CustomerId:** 9  \n   **Name:** Kara Nielsen  \n   **Country:** Denmark  \n\n10. **CustomerId:** 10  \n    **Name:** Eduardo Martins  \n    **Country:** Brazil  \n\n---\n\nLet me know if you need further adjustments!"
+  },
+  {
+    "query": "which country has highest revenue",
+    "response": "Here\u2019s the cleaned and properly formatted version of your text:\n\n- **Country with the Highest Revenue**: USA  \n- **Revenue**: $523.06"
+  },
+  {
+    "query": "where is Lu\u00eds Gon\u00e7alves from?",
+    "response": "Certainly! Here's the cleaned and properly formatted text:\n\n- Lu\u00eds Gon\u00e7alves is from Brazil."
+  }
+]
