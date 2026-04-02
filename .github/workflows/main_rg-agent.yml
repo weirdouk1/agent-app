@@ -1,37 +1,29 @@
-
 name: Deploy Python app to Azure Web App - rg-agent
 
 on:
-push:
-branches:
-- main
-workflow_dispatch:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
-deploy:
-runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-latest
 
-```
-steps:
-  - name: Checkout repository
-    uses: actions/checkout@v4
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-  - name: Set up Python
-    uses: actions/setup-python@v5
-    with:
-      python-version: '3.11'
+      - name: Login to Azure
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_4473CD5F653842C49385F5C8A80757FD }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_1401A63D4B794BD98E90413A8D5F838E }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_6154B964EFD44EDEA77552EA3B27DB20 }}
 
-  - name: Login to Azure
-    uses: azure/login@v2
-    with:
-      client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_4473CD5F653842C49385F5C8A80757FD }}
-      tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_1401A63D4B794BD98E90413A8D5F838E }}
-      subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_6154B964EFD44EDEA77552EA3B27DB20 }}
-
-  - name: Deploy to Azure Web App
-    uses: azure/webapps-deploy@v3
-    with:
-      app-name: 'rg-agent'
-      slot-name: 'Production'
-      package: .
-```
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: rg-agent
+          slot-name: Production
+          package: .
