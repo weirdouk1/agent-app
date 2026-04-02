@@ -1,4 +1,7 @@
 streamlit
+gunicorn
+fastapi
+uvicorn
 openai
 python-dotenv
 chromadb
