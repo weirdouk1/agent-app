@@ -12,3 +12,4 @@ pydantic
 langgraph
 langchain
 langchain-openai
+protobuf==3.20.3
