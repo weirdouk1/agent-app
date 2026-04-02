@@ -73,4 +73,5 @@ jobs:
         with:
           app-name: 'rg-agent'
           slot-name: 'Production'
+          package: .
           
