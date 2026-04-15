@@ -8,7 +8,6 @@ from app.retrieval.chroma_db import query_doc
 from app.memory.memory_store import save_memory, load_memory
 from app.llm.azure_openai import generate_response
 
-
 def intent_node(state):
   state["intent"] = detect_intent(state["user_input"])
   return state
