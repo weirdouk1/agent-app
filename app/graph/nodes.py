@@ -81,26 +81,59 @@ def vector_node(state):
   return state
 
 def reasoning_node(state):
-  data = state.get("structured_data", [])
-  user_q = state.get("user_input", "").lower()
 
-  if not data:
+  route = state.get("route", "hybrid")
+  structured = state.get("structured_data", [])
+  vector = state.get("vector_data", {})
+  context = state.get("context", "")
+  user_q = state.get("user_input", "")
+
+  # No data case
+  if not structured and not vector:
     state["final_answer"] = "No relevant data found."
     return state
 
-  prompt = f"""
-Answer the user clearly using the data.
+  # 🔹 SQL ONLY
+  if route == "sql":
+    data = f"""
+Structured Data:
+{structured}
+"""
 
-Question:
+  # 🔹 VECTOR ONLY
+  elif route == "vector":
+    data = f"""
+Semantic Data:
+{vector}
+"""
+
+  # 🔹 HYBRID
+  else:
+    data = f"""
+Structured Data:
+{structured}
+
+Semantic Data:
+{vector}
+"""
+
+  prompt = f"""
+You are an intelligent assistant.
+
+Previous Context:
+{context}
+
+User Question:
 {user_q}
 
-Data:
+Available Data:
 {data}
 
-Rules:
-- Show only useful information
-- Keep it concise
-- Format cleanly (bullets if needed)
+Instructions:
+- Use only the provided data
+- Prefer structured data for exact values
+- Use semantic data only if present
+- Keep answer clear and concise
 """
 
   state["final_answer"] = generate_response(prompt)
